@@ -35,10 +35,16 @@ func main() {
 		}
 	}
 
+	fmt.Println("URL:", url)
+	fmt.Println("Size:", size)
+	fmt.Println("Name:", name)
+
 	// Create a folder to store the QR code
 	os.Mkdir(name, 0755)
 	os.Chdir(name)
 
 	// Create a QR code
 	qrcode.WriteFile(url, qrcode.Medium, size, name+".png")
+
+	fmt.Println("QR code generated")
 }
