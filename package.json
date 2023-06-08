@@ -1,0 +1,9 @@
+{
+  "name": "qr-code-generator",
+  "version": "1.0",
+  "scripts": {
+    "build": "go build -o bin/qr-code-generator.exe main.go"
+  },
+  "author": "shukaaa",
+  "license": "ISC"
+}
